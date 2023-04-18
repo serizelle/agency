@@ -104,3 +104,135 @@ span {
   background-color: #ff2d2d;
   border-radius: 5px;
 }
+/* 2 */
+
+.service__content {
+  width: 538px;
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+}
+.service__content p {
+  margin-bottom: 64px;
+  height: auto;
+}
+.service__button {
+  width: 227px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  color: #ff2d2d;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #FF0000;
+  transition: all 0.4s ease;;
+}
+.service__button:hover {
+  color: #ffffff;
+  background-color: #ff2d2d;
+}
+.service__info {
+  width: 609px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 52px;
+}
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding-top: 108px;
+
+}
+.service__item {
+  flex-grow: 1;
+  flex-basis: 290px;
+}
+.service__heading {
+  margin-top: 30px;
+  margin-bottom: 13px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+
+}
+.service__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 100px;
+  border-bottom: 5px solid #ececec;
+  padding-bottom: 98px;
+}
+.service__item p {
+  height: auto;
+}
+.gear:hover {
+  animation: 5s linear rotateR infinite;
+}
+@keyframes rotateR {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.pencil {
+  bottom: 0px;
+  position: relative;
+  left: 0px;
+}
+.pencil:hover {
+  animation: 0.6s ease-in-out writing infinite,
+  0.6s ease-in-out rightwriting infinite;
+}
+@keyframes writing {
+  from {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 5px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes rightwriting {
+  from {
+    left: 0px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+.truck {
+  position: relative;
+  left: 0px;
+}
+.truck:hover {
+  animation: 0.6s ease-in-out rightwriting infinite;
+}
+@keyframes rightwriting {
+  from {
+    left: 0px;
+  }
+  100% {
+    left: 30px;
+  }
+}
+.diamond {
+  transition: all 0.4s ease;
+}
+.diamond:hover {
+  transform: scale(1.3);
+}
