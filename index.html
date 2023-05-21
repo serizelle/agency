@@ -8,6 +8,20 @@
     <title>Project</title>
   </head>
   <body>
+    <header class="header__mobile">
+      <nav>
+        <ul class="menu">
+          <li class="menu__li">
+            <a href="" class="menu__link menu__link_active">home</a>
+          </li>
+          <li class="menu__li">
+            <a href="" class="menu__link">portfolio</a>
+          </li>
+          <li class="menu__li"><a href="" class="menu__link">about&nbsp;us</a></li>
+          <li class="menu__li"><a href="" class="menu__link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="section__intro section_center">
       <header class="header">
         <nav>
@@ -25,7 +39,7 @@
       </header>
       <div class="section__intro__content">
         <div class="section__intro__info">
-          <h1 class="title">our strong <span>organaisation</span></h1>
+          <h1 class="title section__intro__title">our strong <span>organisation</span></h1>
           <p class="text section__intro__text">
             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
             eiusmod tempor incididunt ut labore et. ectetur adig ipis cing elit,
@@ -78,7 +92,7 @@
           <a href="#" class="gallery-filters__item">print template</a>
           <a href="#" class="gallery-filters__item">web template</a>
           <a href="#" class="gallery-filters__item">user interface</a>
-          <a href="#" class="gallery-filters__item">mock-up</a>
+          <a href="#" class="gallery-filters__item">mock&#8209;up</a>
         </div>
         <div class="gallery-images products__gallery__images">
             <a href="" class="galleru-images__item"><img src="img/products_item.jpg" alt="product picture"></a>
@@ -106,7 +120,7 @@
             <a class="team__link" href="#" class="link">Facebook</a>
             <a class="team__link" href="#" class="link">Dribble</a>
             <a class="team__link" href="#" class="link">Behance</a>
-            <a class="team__link" href="#" class="link">Twiter</a>
+            <a class="team__link" href="#" class="link">Twitter</a>
           </div>
           <div class="team__gallery">
             <a href="#" class="team__gallery__photo"><img src="img/Rectangle2.jpg" alt="">
@@ -147,5 +161,20 @@
         </div>
       </div>
     </section>
+    <footer class="footer section_center" >
+      <p class="footer__text">© Copyright Junaed <span class="footer__year"></span>, All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#" class="footer__link"><img class="footer__link__picture" src="img/Twitter.svg" alt=""></a>
+        <a href="#" class="footer__link"><img class="footer__link__picture" src="img/LinkedIn.svg" alt=""></a>
+        <a href="#" class="footer__link"><img class="footer__link__picture" src="img/Google.svg" alt=""></a>
+        <a href="#" class="footer__link"><img class="footer__link__picture" src="img/Facebook.svg" alt=""></a>
+      </div>
+    </footer>
+    <script>
+      const footerYearEl = document.querySelector('.footer__year');
+      let today = new Date();
+      let year = today.getFullYear();
+      footerYearEl.textContent = year;
+    </script>
   </body>
 </html>
