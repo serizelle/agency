@@ -315,7 +315,7 @@ span {
   gap: 17px;
   margin-top: 58px;
 }
-.galleru-images__item {
+.gallery-images__item {
   display: flex;
 }
 
@@ -929,7 +929,7 @@ color: #B8B8B8;
   .contacts__content {
     gap: 65px;
   }
-  .galleru-images__item {
+  .gallery-images__item {
     width: 45%;
   }
 }
