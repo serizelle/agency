@@ -29,11 +29,9 @@
             <li class="menu__li">
               <a href="" class="menu__link menu__link_active">home</a>
             </li>
-            <li class="menu__li">
-              <a href="" class="menu__link">portfolio</a>
-            </li>
-            <li class="menu__li"><a href="" class="menu__link">about us</a></li>
-            <li class="menu__li"><a href="" class="menu__link">contact</a></li>
+            <li class="menu__li"><a href="#products" class="menu__link">portfolio</a></li>
+            <li class="menu__li"><a href="#section__team" class="menu__link">about us</a></li>
+            <li class="menu__li"><a href="#contacts" class="menu__link">contact</a></li>
           </ul>
         </nav>
       </header>
@@ -45,7 +43,7 @@
             eiusmod tempor incididunt ut labore et. ectetur adig ipis cing elit,
             sed do eiusmod tempor incididunt.
           </p>
-          <a href="#" class="btn">Contact Us</a>
+          <a href="#contacts" class="btn">Contact Us</a>
         </div>
         <video controls src="#" class="section__intro__video"></video>
       </div>
@@ -83,7 +81,7 @@
       </div>
     </div>
     </section>
-    <section class="products section_center">
+    <section class="products section_center" id="products">
       <h2 class="heading heading_center">feature products</h2>
       <p class="text text_width_500">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</p>
       <div class="products__gallery">
@@ -106,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section class="section__team section_center">
+    <section class="section__team section_center" id="section__team">
       <div class="section__team__description">
         <h2 class="heading team__heading">Meet our team</h2>
         <p class="text text_description section__team__description__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
@@ -143,7 +141,7 @@
         <button type="submit" href="#" class="subscribe__button">subscribe</button>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="heading contacts__heading">get in touch</h2>
       <p class="text contacts__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
       <div class="contacts__content">
@@ -175,6 +173,7 @@
       let today = new Date();
       let year = today.getFullYear();
       footerYearEl.textContent = year;
+
     </script>
   </body>
 </html>

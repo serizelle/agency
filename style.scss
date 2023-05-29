@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -54,6 +58,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .menu__link:hover {
   background: #ff3f40;
 }
@@ -704,6 +709,7 @@ color: #B8B8B8;
     width: 45%;
   }
 }
+
 @media (max-width: 1024px) {
   .section_center {
     padding-left: calc(50% - 734px / 2);
@@ -935,5 +941,43 @@ color: #B8B8B8;
   .gallery-images__item {
     width: 45%;
   }
+}
+
+@media (max-width: 374px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .menu__link {
+    padding: 30px 0px 25px;
+    width: 160px;
+    display: block;
+    text-align: center;
+  }
+  .section__intro__title {
+    font-size: 30px;
+  }
+  .service__box::after {
+    width: 300px;
+  }
+  .contacts__info {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .subscribe__input, .subscribe__button {
+    width: 90%;
+  }
+  .team__links {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .team__info__text {
+    margin-bottom: 20px;
+  }
+  .subscribe__form {
+    align-items: center;
+}
 }
 // width: ($widthSite - 2 * &gap) / 3; - makes 3 items of the same width on a page
