@@ -1,9 +1,10 @@
+//footer date
 const footerYearEl = document.querySelector('.footer__year');
 let today = new Date();
 let year = today.getFullYear();
 footerYearEl.textContent = year;
 
-
+//burger menu
 const toggle = document.getElementById('toggle')
 const nav = document.getElementById('nav')
 

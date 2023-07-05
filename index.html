@@ -45,7 +45,7 @@
             </p>
             <a href="#contacts" class="btn">Contact Us</a>
           </div>
-          <video controls src="#" class="section__intro__video" poster="img/poster.jpg"></video>
+          <video controls src="img/song.mp4" class="section__intro__video" poster="img/poster.jpg"></video>
         </div>
       </section>
       <section class="service section_center">
@@ -137,8 +137,8 @@
         <h2 class="heading heading_reverse">Design tips, tricks, and freebies. Delivered weekly.</h2>
         <p class="text text_reverse subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
         <form action="#" class="subscribe__form" method="get">
-          <input class="subscribe__input" type="email" placeholder="Email Address...">
-          <input type="submit" value="subscribe" class="subscribe__button" name="email">
+          <input class="subscribe__input" name="email" type="email" placeholder="Email Address...">
+          <input type="submit" value="subscribe" class="subscribe__button" name="submitEmail">
         </form>
       </section>
       <section class="contacts" id="contacts">
@@ -148,8 +148,8 @@
           <form action="#" class="contacts__form" method="get">
             <input class="contacts__input" type="text" placeholder="Name" name="firstname">
             <input class="contacts__input" type="email" name="email" placeholder="Your Mail">
-            <textarea class="contacts__input contacts__input_textarea" placeholder="Type your message"></textarea>
-            <input class="contacts__button" type="submit" value="Send message">
+            <textarea class="contacts__input contacts__input_textarea" placeholder="Type your message" name="message"></textarea>
+            <input class="contacts__button" name="submitForm" type="submit" value="Send message">
           </form>
           <div class="contacts__info">
             <h3 class="contacts__info__heading">contact info</h3>
